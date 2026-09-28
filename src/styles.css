@@ -1117,8 +1117,34 @@ select {
   }
 }
 
-/* ------------------------------------------- the starter's guestbook page */
+/* ----------------------------------------------------------------- home */
 
-#messages {
-  padding-inline-start: 1.2rem;
+.home {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: var(--s7) var(--gutter) 0;
+}
+
+.home h1 {
+  font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+  padding-bottom: var(--s5);
+  border-bottom: 3px solid var(--gold);
+}
+
+.home .lede {
+  margin-top: var(--s5);
+  font-size: 1.15rem;
+}
+
+.home__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s5);
+  margin-top: var(--s6);
+}
+
+.home__actions .button {
+  text-decoration: none;
+  min-height: 3rem;
 }
