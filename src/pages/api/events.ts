@@ -9,6 +9,7 @@ import { bus } from "../../lib/events";
 // only when the client needs to push over the same connection.
 export const GET: APIRoute = () => {
   let onMessage: (message: Message) => void;
+  let onPlan: (studentId: string) => void;
   let heartbeat: ReturnType<typeof setInterval>;
 
   const stream = new ReadableStream<string>({
@@ -22,10 +23,17 @@ export const GET: APIRoute = () => {
         controller.enqueue(`data: ${JSON.stringify(message)}\n\n`);
       };
       bus.on("message", onMessage);
+      // A plan changed (another tab enrolled or dropped): pages showing that
+      // student's plan reload it.
+      onPlan = (studentId) => {
+        controller.enqueue(`event: plan-changed\ndata: ${JSON.stringify(studentId)}\n\n`);
+      };
+      bus.on("plan-changed", onPlan);
     },
     cancel() {
       clearInterval(heartbeat);
       bus.off("message", onMessage);
+      bus.off("plan-changed", onPlan);
     },
   });
 

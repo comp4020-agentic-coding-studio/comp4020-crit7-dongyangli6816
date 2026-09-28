@@ -221,7 +221,38 @@ async function timetableSession() {
   };
 }
 
+// ----------------------------------------------------------------- titles
+
+/** Code → title for every COMP course listed in either year, any career or
+ *  session. Requisites name courses not offered this session (and
+ *  undergraduate ones); this lets the app say "Introduction to Machine
+ *  Learning" instead of "COMP6670". */
+async function allTitles(): Promise<Record<string, string>> {
+  const titles: Record<string, string> = {};
+  for (const year of [YEAR - 1, YEAR]) {
+    const q = new URLSearchParams({
+      AppliedFilter: "FilterByCourses",
+      SearchText: "COMP",
+      SelectedYear: String(year),
+      ShowAll: "true",
+      PageIndex: "0",
+      MaxPageSize: "10",
+    });
+    const res = await get(`${PC}/data/CourseSearch/GetCourses?${q}`);
+    const data = (await res.json()) as { Items: { CourseCode: string; Name: string }[] };
+    for (const i of data.Items) titles[i.CourseCode] = i.Name.trim();
+  }
+  return Object.fromEntries(Object.entries(titles).sort(([a], [b]) => a.localeCompare(b)));
+}
+
 // ------------------------------------------------------------------- main
+
+// `pnpm fetch:catalogue titles` refreshes only the title list.
+if (process.argv[2] === "titles") {
+  writeFileSync("src/data/titles.json", `${JSON.stringify(await allTitles(), null, 2)}\n`);
+  console.log("wrote src/data/titles.json");
+  process.exit(0);
+}
 
 const fetchedAt = new Date().toISOString().slice(0, 10);
 const list = await listCourses();
@@ -267,4 +298,5 @@ writeFileSync(
     2,
   )}\n`,
 );
-console.log("wrote src/data/catalogue.json and src/data/timetable.json");
+writeFileSync("src/data/titles.json", `${JSON.stringify(await allTitles(), null, 2)}\n`);
+console.log("wrote src/data/catalogue.json, timetable.json and titles.json");
