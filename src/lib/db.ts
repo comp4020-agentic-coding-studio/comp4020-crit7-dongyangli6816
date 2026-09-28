@@ -15,6 +15,9 @@ mkdirSync(dirname(path), { recursive: true });
 
 const client = new Database(path);
 client.pragma("journal_mode = WAL");
+// SQLite ignores foreign keys unless asked, per connection: without this an
+// enrolment could point at a course the catalogue never offered.
+client.pragma("foreign_keys = ON");
 
 export const db = drizzle(client);
 
