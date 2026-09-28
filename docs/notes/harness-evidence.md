@@ -110,3 +110,27 @@ bug only exists when a real page with a live event stream submits a form.
 and focus afterwards, then repeating it: one success would have hidden a
 race. Rule candidate: an intermittent result counts as a failure until it
 passes repeatedly for a known reason.
+
+## README images passed every test and 500'd in production
+
+**What happened (2026-09-28).** After the deploy, replaying CI's linkinator
+probe against the live site found both README images returning 500: Astro's
+image endpoint needs Sharp, which the Docker image doesn't carry. Locally a
+plain `node dist/server/entry.mjs` failed the same way, but the suite was
+green twice over: no test fetched images, and when I added one that did, it
+*still* passed. The test server inherits the environment of pnpm's vitest
+launcher, whose `NODE_PATH` points into pnpm's store, so under test the
+server could load Sharp and in production it couldn't.
+
+**What it cost.** A broken live page between deploys, a config change
+(passthrough image service), and two rounds to get a sensor that could fail.
+
+**What caught it.** Probing the deployed site the way CI will, then
+breaking the fix on purpose to see the new test go red. It didn't, which
+exposed the environment leak.
+
+**The harness fix.** `spec/assets.test.ts` fetches every image, stylesheet and
+script each route in `spec/routes.ts` points at; `spec/global-setup.ts` drops
+`NODE_PATH` so the test server resolves modules like production. Verified
+both ways: red with the old image service, green with the fix. Both are
+`check` sensors, so they can carry forward if promoted.

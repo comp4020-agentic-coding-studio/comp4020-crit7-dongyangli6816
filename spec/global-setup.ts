@@ -28,9 +28,14 @@ export default async function setup(project: TestProject): Promise<() => void> {
     });
   });
 
+  // pnpm's launcher for vitest (node_modules/.bin/vitest) puts pnpm's store
+  // on NODE_PATH, and the server would inherit it: then it resolves packages
+  // the production image can't (Sharp, once: README images passed here and
+  // 500'd on Fly). Drop it so the server resolves modules like production.
+  const { NODE_PATH: _, ...env } = process.env;
   const server = spawn("node", [entry], {
     env: {
-      ...process.env,
+      ...env,
       HOST: "127.0.0.1",
       PORT: String(port),
       DATABASE_PATH: join(mkdtempSync(join(tmpdir(), "spec-db-")), "test.db"),
