@@ -1,0 +1,2569 @@
+{
+  "source": "https://timetabling.anu.edu.au/sws2026/",
+  "session": "First Semester 2026",
+  "fetchedAt": "2026-09-28",
+  "activities": {
+    "COMP6240": [
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Monday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "ComA/02",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Monday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "ComA/03",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Monday",
+        "start": "16:00",
+        "end": "18:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "ComA/04",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "ComA/05",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "ComA/06",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "ComA/07",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "16:00",
+        "end": "18:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "ComA/08",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "ComA/09",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "ComA/10",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "ComA/11",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "ComA/12",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "12:00",
+        "end": "14:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "DroA/01",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Wednesday",
+        "start": "08:00",
+        "end": "13:00",
+        "location": "Marie Reay 5.06"
+      },
+      {
+        "activity": "DroA/02",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Wednesday",
+        "start": "13:00",
+        "end": "18:00",
+        "location": "Marie Reay 5.06"
+      },
+      {
+        "activity": "DroA/03",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Friday",
+        "start": "12:00",
+        "end": "17:00",
+        "location": "COP G029"
+      },
+      {
+        "activity": "DroA/04",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Tuesday",
+        "start": "12:00",
+        "end": "17:00",
+        "location": "Marie Reay 5.06"
+      },
+      {
+        "activity": "DroA/05",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Monday",
+        "start": "08:00",
+        "end": "13:00",
+        "location": "Marie Reay 5.06"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Thursday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "Kambri MCH"
+      }
+    ],
+    "COMP6242": [
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Monday",
+        "start": "08:00",
+        "end": "09:00",
+        "location": "Kambri Cinema"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Tuesday",
+        "start": "15:00",
+        "end": "16:00",
+        "location": "Kambri Cinema"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Tuesday",
+        "start": "15:00",
+        "end": "16:00",
+        "location": "Melville Hall"
+      },
+      {
+        "activity": "WorA/01",
+        "group": "WorA",
+        "kind": "Workshop",
+        "day": "Wednesday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "WorA/02",
+        "group": "WorA",
+        "kind": "Workshop",
+        "day": "Wednesday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "WorA/03",
+        "group": "WorA",
+        "kind": "Workshop",
+        "day": "Thursday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "WorA/04",
+        "group": "WorA",
+        "kind": "Workshop",
+        "day": "Thursday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "WorA/05",
+        "group": "WorA",
+        "kind": "Workshop",
+        "day": "Friday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "WorA/06",
+        "group": "WorA",
+        "kind": "Workshop",
+        "day": "Friday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "HN Lab 1"
+      }
+    ],
+    "COMP6262": [
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Wednesday",
+        "start": "17:00",
+        "end": "18:00",
+        "location": "COOMBS T"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Thursday",
+        "start": "12:00",
+        "end": "13:00",
+        "location": "COOMBS T"
+      },
+      {
+        "activity": "LecC/01",
+        "group": "LecC",
+        "kind": "Lecture",
+        "day": "Friday",
+        "start": "12:00",
+        "end": "13:00",
+        "location": "COOMBS T"
+      },
+      {
+        "activity": "TutA/01",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Friday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "Marie Reay 4.03"
+      },
+      {
+        "activity": "TutA/01",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "Marie Reay 4.02"
+      },
+      {
+        "activity": "TutA/02",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "Marie Reay 4.05"
+      },
+      {
+        "activity": "TutA/03",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Friday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "RSISE A105"
+      },
+      {
+        "activity": "TutA/03",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "RSISE A105"
+      },
+      {
+        "activity": "TutA/04",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "CSIT N108"
+      },
+      {
+        "activity": "TutA/05",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Friday",
+        "start": "13:00",
+        "end": "15:00",
+        "location": "Marie Reay 4.05"
+      },
+      {
+        "activity": "TutA/05",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "CSIT N101"
+      },
+      {
+        "activity": "TutA/07",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Friday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "Marie Reay 3.05"
+      },
+      {
+        "activity": "TutA/07",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "CSIT N101"
+      },
+      {
+        "activity": "TutA/09",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Wednesday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "Fulton Muir 2.04"
+      },
+      {
+        "activity": "TutA/10",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "Marie Reay 5.06"
+      },
+      {
+        "activity": "TutA/11",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Wednesday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "Marie Reay 5.02"
+      },
+      {
+        "activity": "TutA/12",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Wednesday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "Marie Reay 5.04"
+      },
+      {
+        "activity": "TutA/13",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Friday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "Marie Reay 5.05"
+      },
+      {
+        "activity": "TutA/13",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "16:00",
+        "end": "18:00",
+        "location": "Marie Reay 4.04"
+      },
+      {
+        "activity": "TutA/14",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "CSIT N108"
+      }
+    ],
+    "COMP6300": [
+      {
+        "activity": "AsmA/01",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Friday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "Melville Hall"
+      },
+      {
+        "activity": "AsmA/02",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "Fulton Muir 2.02"
+      },
+      {
+        "activity": "AsmA/03",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "Fellows Road Law Theatre 1"
+      },
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "HN Lab 2"
+      },
+      {
+        "activity": "ComA/02",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "HN Lab 2"
+      },
+      {
+        "activity": "ComA/04",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "HN Lab 2"
+      },
+      {
+        "activity": "ComA/05",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "HN Lab 2"
+      },
+      {
+        "activity": "ComA/06",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "12:00",
+        "end": "14:00",
+        "location": "HN Lab 2"
+      },
+      {
+        "activity": "ComA/07",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "HN Lab 2"
+      },
+      {
+        "activity": "ComA/08",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "HN Lab 2"
+      },
+      {
+        "activity": "ComA/09",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "HN Lab 2"
+      },
+      {
+        "activity": "ComA/10",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "12:00",
+        "end": "14:00",
+        "location": "HN Lab 2"
+      },
+      {
+        "activity": "ComA/11",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "HN Lab 2"
+      },
+      {
+        "activity": "ComA/12",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "HN Lab 2"
+      },
+      {
+        "activity": "ComA/13",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "16:00",
+        "end": "18:00",
+        "location": "HN Lab 2"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Monday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "Kambri MCH"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Thursday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "Kambri MCH"
+      },
+      {
+        "activity": "LecMakA/01",
+        "group": "LecMakA",
+        "kind": "Lecture Makeup",
+        "day": "Tuesday",
+        "start": "16:00",
+        "end": "18:00",
+        "location": "Kambri MCH"
+      }
+    ],
+    "COMP6320": [
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/02",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/03",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "12:00",
+        "end": "14:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/04",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "16:00",
+        "end": "18:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/05",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "12:00",
+        "end": "14:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/06",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/07",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/08",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/09",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/10",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "16:00",
+        "end": "18:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Monday",
+        "start": "14:00",
+        "end": "15:00",
+        "location": "Kambri T2"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Wednesday",
+        "start": "09:00",
+        "end": "10:00",
+        "location": "COOMBS T"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Tuesday",
+        "start": "16:00",
+        "end": "18:00",
+        "location": "RN Robertson T"
+      },
+      {
+        "activity": "TutA/01",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Wednesday",
+        "start": "09:00",
+        "end": "10:30",
+        "location": "HN 1.25"
+      },
+      {
+        "activity": "TutA/02",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Wednesday",
+        "start": "10:30",
+        "end": "12:00",
+        "location": "HN 1.25"
+      },
+      {
+        "activity": "TutA/03",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Wednesday",
+        "start": "16:00",
+        "end": "17:30",
+        "location": "HN 1.25"
+      },
+      {
+        "activity": "TutA/04",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "11:30",
+        "end": "13:00",
+        "location": "HN 1.25"
+      },
+      {
+        "activity": "TutA/05",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Friday",
+        "start": "13:00",
+        "end": "14:30",
+        "location": "Birch 1.33 Teaching Lab"
+      },
+      {
+        "activity": "TutA/06",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "10:00",
+        "end": "11:30",
+        "location": "HN 1.25"
+      },
+      {
+        "activity": "TutA/07",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Friday",
+        "start": "11:00",
+        "end": "12:30",
+        "location": "HN 1.25"
+      },
+      {
+        "activity": "TutA/08",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "14:00",
+        "end": "15:30",
+        "location": "Birch 1.33 Teaching Lab"
+      },
+      {
+        "activity": "TutA/09",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "08:00",
+        "end": "09:30",
+        "location": "Birch 1.33 Teaching Lab"
+      },
+      {
+        "activity": "TutA/10",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "14:00",
+        "end": "15:30",
+        "location": "HN 1.25"
+      },
+      {
+        "activity": "TutA/11",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Friday",
+        "start": "09:30",
+        "end": "11:00",
+        "location": "HN 1.25"
+      },
+      {
+        "activity": "TutA/12",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Friday",
+        "start": "08:00",
+        "end": "09:30",
+        "location": "HN 1.25"
+      }
+    ],
+    "COMP6331": [
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Monday",
+        "start": "16:00",
+        "end": "18:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "12:00",
+        "end": "14:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "ComA/02",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "CSIT N111"
+      },
+      {
+        "activity": "ComA/03",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "12:00",
+        "end": "14:00",
+        "location": "CSIT N111"
+      },
+      {
+        "activity": "ComA/04",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "CSIT N111"
+      },
+      {
+        "activity": "ComA/05",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "CSIT N111"
+      },
+      {
+        "activity": "ComA/06",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "13:00",
+        "end": "15:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "ComA/07",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "ComA/08",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "16:00",
+        "end": "18:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "ComA/09",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "16:00",
+        "end": "18:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/10",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "ComA/11",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/11",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "ComA/12",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "17:00",
+        "end": "19:00",
+        "location": "CSIT N111"
+      },
+      {
+        "activity": "ComA/12",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "17:00",
+        "end": "19:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "ComA/13",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "17:00",
+        "end": "19:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/14",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "17:00",
+        "end": "19:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "ComA/15",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "17:00",
+        "end": "19:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Monday",
+        "start": "12:00",
+        "end": "14:00",
+        "location": "Kambri Cinema"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Thursday",
+        "start": "13:00",
+        "end": "15:00",
+        "location": "RN Robertson T"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Tuesday",
+        "start": "14:00",
+        "end": "15:00",
+        "location": "Kambri Cinema"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Friday",
+        "start": "09:00",
+        "end": "10:00",
+        "location": "COOMBS T"
+      }
+    ],
+    "COMP6363": [
+      {
+        "activity": "DroA/01",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Thursday",
+        "start": "12:00",
+        "end": "13:00",
+        "location": "CSIT N108"
+      },
+      {
+        "activity": "DroB/01",
+        "group": "DroB",
+        "kind": "Drop-In Class",
+        "day": "Wednesday",
+        "start": "11:00",
+        "end": "11:30",
+        "location": "Birch 1.36 Teaching Lab"
+      },
+      {
+        "activity": "DroB/02",
+        "group": "DroB",
+        "kind": "Drop-In Class",
+        "day": "Friday",
+        "start": "08:00",
+        "end": "08:30",
+        "location": "Birch 1.36 Teaching Lab"
+      },
+      {
+        "activity": "DroB/02",
+        "group": "DroB",
+        "kind": "Drop-In Class",
+        "day": "Wednesday",
+        "start": "13:00",
+        "end": "13:30",
+        "location": "Birch 1.36 Teaching Lab"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "10:00",
+        "location": "PSYC G8"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Tuesday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "ENGN T"
+      },
+      {
+        "activity": "TutA/01",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Wednesday",
+        "start": "11:30",
+        "end": "13:00",
+        "location": "Birch 1.36 Teaching Lab"
+      },
+      {
+        "activity": "TutA/02",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Friday",
+        "start": "08:30",
+        "end": "10:00",
+        "location": "Birch 1.36 Teaching Lab"
+      },
+      {
+        "activity": "TutA/02",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Wednesday",
+        "start": "13:30",
+        "end": "15:00",
+        "location": "Birch 1.36 Teaching Lab"
+      }
+    ],
+    "COMP6442": [
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "16:00",
+        "end": "17:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/02",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "10:00",
+        "end": "11:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "ComA/03",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "12:00",
+        "end": "13:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/04",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "14:00",
+        "end": "15:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/05",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "16:00",
+        "end": "17:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/06",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "10:00",
+        "end": "11:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "ComA/07",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "12:00",
+        "end": "13:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "ComA/08",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "14:00",
+        "end": "15:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "ComA/09",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "08:00",
+        "end": "09:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "DroA/01",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Tuesday",
+        "start": "17:00",
+        "end": "18:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "DroA/02",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Tuesday",
+        "start": "11:00",
+        "end": "12:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "DroA/03",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Tuesday",
+        "start": "13:00",
+        "end": "14:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "DroA/04",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Tuesday",
+        "start": "15:00",
+        "end": "16:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "DroA/05",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Thursday",
+        "start": "17:00",
+        "end": "18:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "DroA/06",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Wednesday",
+        "start": "11:00",
+        "end": "12:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "DroA/07",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Wednesday",
+        "start": "13:00",
+        "end": "14:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "DroA/08",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Wednesday",
+        "start": "15:00",
+        "end": "16:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "DroA/09",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Thursday",
+        "start": "09:00",
+        "end": "10:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "Melville Hall"
+      },
+      {
+        "activity": "WorA/01",
+        "group": "WorA",
+        "kind": "Workshop",
+        "day": "Friday",
+        "start": "14:00",
+        "end": "18:00",
+        "location": "Melville Hall"
+      }
+    ],
+    "COMP6445": [
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Monday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "Kambri T2"
+      },
+      {
+        "activity": "TutA/02",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Tuesday",
+        "start": "15:00",
+        "end": "16:30",
+        "location": "Marie Reay 5.05"
+      },
+      {
+        "activity": "TutA/03",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Wednesday",
+        "start": "14:00",
+        "end": "15:30",
+        "location": "Marie Reay 5.05"
+      },
+      {
+        "activity": "TutA/04",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Wednesday",
+        "start": "15:30",
+        "end": "17:00",
+        "location": "Marie Reay 5.05"
+      },
+      {
+        "activity": "TutA/05",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "14:00",
+        "end": "15:30",
+        "location": "Marie Reay 3.03"
+      },
+      {
+        "activity": "TutA/06",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "15:30",
+        "end": "17:00",
+        "location": "Marie Reay 3.03"
+      }
+    ],
+    "COMP6528": [
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "13:00",
+        "end": "14:00",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "ComA/02",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Monday",
+        "start": "17:00",
+        "end": "18:00",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "ComA/02",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "17:00",
+        "end": "18:00",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "ComA/03",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "11:00",
+        "end": "12:00",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "ComA/04",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "11:00",
+        "end": "12:00",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Monday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "Kambri Cinema"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Thursday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "Kambri Cinema"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Wednesday",
+        "start": "12:00",
+        "end": "13:00",
+        "location": "Kambri Cinema"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Wednesday",
+        "start": "12:00",
+        "end": "13:00",
+        "location": ""
+      }
+    ],
+    "COMP6710": [
+      {
+        "activity": "AsmA/01",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Friday",
+        "start": "10:30",
+        "end": "14:30",
+        "location": "CSIT N111"
+      },
+      {
+        "activity": "AsmA/02",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Friday",
+        "start": "14:30",
+        "end": "16:30",
+        "location": "CSIT N111"
+      },
+      {
+        "activity": "AsmA/03",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Friday",
+        "start": "14:30",
+        "end": "16:30",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "AsmA/04",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Friday",
+        "start": "14:30",
+        "end": "16:30",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "AsmA/05",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Friday",
+        "start": "14:30",
+        "end": "16:30",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "AsmB/01",
+        "group": "AsmB",
+        "kind": "Assessment",
+        "day": "Monday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "AsmB/02",
+        "group": "AsmB",
+        "kind": "Assessment",
+        "day": "Monday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "AsmB/03",
+        "group": "AsmB",
+        "kind": "Assessment",
+        "day": "Monday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "AsmB/04",
+        "group": "AsmB",
+        "kind": "Assessment",
+        "day": "Monday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "AsmB/05",
+        "group": "AsmB",
+        "kind": "Assessment",
+        "day": "Monday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "CSIT N111"
+      },
+      {
+        "activity": "AsmB/06",
+        "group": "AsmB",
+        "kind": "Assessment",
+        "day": "Monday",
+        "start": "13:00",
+        "end": "15:00",
+        "location": "CSIT N111"
+      },
+      {
+        "activity": "AsmB/07",
+        "group": "AsmB",
+        "kind": "Assessment",
+        "day": "Monday",
+        "start": "13:00",
+        "end": "16:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "16:00",
+        "end": "18:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "ComA/03",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "CSIT N111"
+      },
+      {
+        "activity": "ComA/04",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/05",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "CSIT N111"
+      },
+      {
+        "activity": "ComA/06",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/07",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "13:00",
+        "end": "15:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Tuesday",
+        "start": "10:00",
+        "end": "11:30",
+        "location": "RN Robertson T"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Friday",
+        "start": "09:00",
+        "end": "10:30",
+        "location": "RN Robertson T"
+      },
+      {
+        "activity": "AsmA/06",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "CSIT N111"
+      },
+      {
+        "activity": "AsmA/07",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "AsmA/08",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "AsmB/08",
+        "group": "AsmB",
+        "kind": "Assessment",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": ""
+      }
+    ],
+    "COMP6800": [
+      {
+        "activity": "AsmA/01",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Thursday",
+        "start": "09:00",
+        "end": "10:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "AsmA/02",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Thursday",
+        "start": "10:00",
+        "end": "11:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "AsmA/03",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Thursday",
+        "start": "11:00",
+        "end": "12:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "AsmA/04",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Wednesday",
+        "start": "09:00",
+        "end": "10:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "AsmA/05",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Wednesday",
+        "start": "10:00",
+        "end": "11:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "09:00",
+        "end": "10:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/02",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "10:00",
+        "end": "11:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "ComA/03",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "11:00",
+        "end": "12:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/04",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "12:00",
+        "end": "13:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "ComA/05",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "09:00",
+        "end": "10:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Tuesday",
+        "start": "09:00",
+        "end": "10:30",
+        "location": "PHYS T"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Wednesday",
+        "start": "12:30",
+        "end": "14:00",
+        "location": "Kambri T2"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Wednesday",
+        "start": "12:30",
+        "end": "14:00",
+        "location": "China in the World LT"
+      }
+    ],
+    "COMP7710": [
+      {
+        "activity": "AsmA/01",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Thursday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "PHYS T"
+      },
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/02",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/03",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "12:00",
+        "end": "14:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "ComA/04",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/05",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/06",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/07",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "12:00",
+        "end": "14:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "ComA/08",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "ComA/09",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "ComA/10",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "DroA/01",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Tuesday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "DroA/02",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Tuesday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "DroA/03",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Tuesday",
+        "start": "12:00",
+        "end": "14:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "DroA/04",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Tuesday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "DroA/05",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Wednesday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "DroA/06",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Wednesday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "DroA/07",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Wednesday",
+        "start": "12:00",
+        "end": "14:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "DroA/08",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Wednesday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "DroA/09",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Thursday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "DroA/10",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Friday",
+        "start": "08:00",
+        "end": "10:00",
+        "location": "CSIT N109"
+      },
+      {
+        "activity": "DroB/01",
+        "group": "DroB",
+        "kind": "Drop-In Class",
+        "day": "Thursday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "Ian Ross R221 Graduate Teaching Room"
+      },
+      {
+        "activity": "DroB/01",
+        "group": "DroB",
+        "kind": "Drop-In Class",
+        "day": "Thursday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "CSIT N101"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Monday",
+        "start": "17:00",
+        "end": "19:00",
+        "location": "PHYS T"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Thursday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "PHYS T"
+      }
+    ],
+    "COMP8280": [
+      {
+        "activity": "LetA/01",
+        "group": "LetA",
+        "kind": "Lectorial",
+        "day": "Wednesday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "Melville Hall"
+      },
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "BPB ETC Studio 2 Orange"
+      },
+      {
+        "activity": "ComA/02",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "MORAN G010"
+      },
+      {
+        "activity": "ComA/03",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Monday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "Peter Karmel 2.28 (Lab 1)"
+      },
+      {
+        "activity": "ComA/04",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Monday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "MORAN G010"
+      },
+      {
+        "activity": "ComA/05",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "CRISP G016"
+      },
+      {
+        "activity": "ComA/06",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "10:00",
+        "end": "11:30",
+        "location": "Birch 1.36 Teaching Lab"
+      },
+      {
+        "activity": "ComA/07",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "11:30",
+        "end": "13:00",
+        "location": "Birch 1.36 Teaching Lab"
+      },
+      {
+        "activity": "ComA/07",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "12:00",
+        "end": "13:00",
+        "location": "Birch 1.36 Teaching Lab"
+      },
+      {
+        "activity": "ComA/08",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "HA 2177"
+      },
+      {
+        "activity": "ComA/09",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "Peter Karmel 2.29 (Lab 2)"
+      },
+      {
+        "activity": "ComA/10",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "14:00",
+        "end": "15:30",
+        "location": "Birch 1.36 Teaching Lab"
+      },
+      {
+        "activity": "ComA/10",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "14:00",
+        "end": "15:00",
+        "location": "Birch 1.36 Teaching Lab"
+      },
+      {
+        "activity": "LetA/01",
+        "group": "LetA",
+        "kind": "Lectorial",
+        "day": "Wednesday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "Melville Hall"
+      },
+      {
+        "activity": "LetA/02",
+        "group": "LetA",
+        "kind": "Lectorial",
+        "day": "Thursday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "Melville Hall"
+      }
+    ],
+    "COMP8300": [
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "12:00",
+        "end": "14:00",
+        "location": "HN 1.25"
+      },
+      {
+        "activity": "ComA/02",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "ENGN E102/104 (Manufacturing/Materials Lab)"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "10:00",
+        "location": "Birch 1.43 Interactive Theatre"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Friday",
+        "start": "13:00",
+        "end": "15:00",
+        "location": "PSYC G5"
+      }
+    ],
+    "COMP8410": [
+      {
+        "activity": "DroA/01",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Monday",
+        "start": "08:00",
+        "end": "09:30",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "DroA/02",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Monday",
+        "start": "16:00",
+        "end": "17:30",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "DroA/03",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Tuesday",
+        "start": "09:00",
+        "end": "10:30",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "DroA/04",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Thursday",
+        "start": "10:30",
+        "end": "12:00",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "DroA/06",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Wednesday",
+        "start": "12:00",
+        "end": "13:30",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "DroA/07",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Tuesday",
+        "start": "13:00",
+        "end": "14:30",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Thursday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "Kambri Cinema"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Friday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "Kambri Cinema"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Thursday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "Kambri Cinema"
+      }
+    ],
+    "COMP8535": [
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Tuesday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "PSYC G6"
+      },
+      {
+        "activity": "TutA/01",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Wednesday",
+        "start": "13:00",
+        "end": "14:00",
+        "location": "CSIT N108"
+      },
+      {
+        "activity": "TutA/02",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Wednesday",
+        "start": "11:00",
+        "end": "12:00",
+        "location": "CSIT N108"
+      },
+      {
+        "activity": "TutA/03",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "09:00",
+        "end": "10:00",
+        "location": "HN 1.25"
+      },
+      {
+        "activity": "TutA/04",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Friday",
+        "start": "09:00",
+        "end": "10:00",
+        "location": "CSIT N108"
+      },
+      {
+        "activity": "TutA/04",
+        "group": "TutA",
+        "kind": "Tutorial",
+        "day": "Thursday",
+        "start": "11:00",
+        "end": "12:00",
+        "location": "CSIT N108"
+      }
+    ],
+    "COMP8600": [
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "09:00",
+        "end": "10:30",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "ComA/02",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "15:00",
+        "end": "16:30",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "ComA/03",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "13:00",
+        "end": "14:30",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/04",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "14:00",
+        "end": "15:30",
+        "location": "HN Lab 2"
+      },
+      {
+        "activity": "ComA/05",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "17:00",
+        "end": "18:30",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "ComA/06",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "14:00",
+        "end": "15:30",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "DroA/01",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Wednesday",
+        "start": "10:30",
+        "end": "11:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "DroA/02",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Tuesday",
+        "start": "16:30",
+        "end": "17:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "DroA/03",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Wednesday",
+        "start": "14:30",
+        "end": "15:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "DroA/04",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Thursday",
+        "start": "15:30",
+        "end": "16:00",
+        "location": "HN Lab 2"
+      },
+      {
+        "activity": "DroA/05",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Thursday",
+        "start": "18:30",
+        "end": "19:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "DroA/06",
+        "group": "DroA",
+        "kind": "Drop-In Class",
+        "day": "Thursday",
+        "start": "15:30",
+        "end": "16:00",
+        "location": "CSIT N113"
+      },
+      {
+        "activity": "DroB/01",
+        "group": "DroB",
+        "kind": "Drop-In Class",
+        "day": "Friday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "Ian Ross R221 Graduate Teaching Room"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Tuesday",
+        "start": "08:30",
+        "end": "11:00",
+        "location": "Kambri T2"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Tuesday",
+        "start": "08:30",
+        "end": "11:00",
+        "location": ""
+      }
+    ],
+    "COMP8610": [
+      {
+        "activity": "AsmA/01",
+        "group": "AsmA",
+        "kind": "Assessment",
+        "day": "Friday",
+        "start": "09:00",
+        "end": "10:30",
+        "location": "Marie Reay 6.02"
+      },
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Tuesday",
+        "start": "15:00",
+        "end": "17:00",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "ComA/02",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "10:00",
+        "end": "12:00",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "ComA/03",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "16:00",
+        "end": "18:00",
+        "location": "CSIT N115/N116"
+      },
+      {
+        "activity": "ComA/04",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "16:00",
+        "end": "18:00",
+        "location": "CSIT N111"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "STB_S1 (3.07)"
+      },
+      {
+        "activity": "LecB/01",
+        "group": "LecB",
+        "kind": "Lecture",
+        "day": "Tuesday",
+        "start": "12:00",
+        "end": "14:00",
+        "location": "STB_S1 (3.07)"
+      }
+    ],
+    "COMP8650": [
+      {
+        "activity": "ComA/01",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Wednesday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/02",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "11:00",
+        "end": "13:00",
+        "location": "HN Lab 1"
+      },
+      {
+        "activity": "ComA/03",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Thursday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "CSIT N112"
+      },
+      {
+        "activity": "ComA/04",
+        "group": "ComA",
+        "kind": "Computer Laboratory",
+        "day": "Friday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "CSIT N114"
+      },
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Tuesday",
+        "start": "14:00",
+        "end": "16:00",
+        "location": "Fulton Muir 2.02"
+      }
+    ],
+    "COMP8715": [
+      {
+        "activity": "LecA/01",
+        "group": "LecA",
+        "kind": "Lecture",
+        "day": "Monday",
+        "start": "09:00",
+        "end": "11:00",
+        "location": "Kambri Cinema"
+      }
+    ]
+  }
+}

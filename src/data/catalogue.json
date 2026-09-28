@@ -1,0 +1,639 @@
+{
+  "source": "https://programsandcourses.anu.edu.au/2027/",
+  "session": "First Semester 2027",
+  "fetchedAt": "2026-09-28",
+  "courses": [
+    {
+      "code": "COMP6240",
+      "title": "Relational Databases",
+      "units": 6,
+      "mode": "In Person",
+      "description": "This course is an introduction to relational databases and the general skills for designing and using them. The topics include the relational data model, SQL, entity-relationship model,functional dependencies,(de-)normalisation, relational algebra, query processing and optimisation, database transactions and security. To deepen the understanding of relational databases, the current industry development of database systems such as NoSQL databases will be introduced at the end of this course.",
+      "convener": null,
+      "requisiteText": "You are not able to enrol in this course if you have successfully completed COMP2400. Incompatible with COMP7240.",
+      "requisiteCodes": [
+        "COMP2400"
+      ],
+      "incompatibleCodes": [
+        "COMP7240"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP6240"
+    },
+    {
+      "code": "COMP6242",
+      "title": "Deep Learning",
+      "units": 6,
+      "mode": "In Person",
+      "description": "The course covers the theory and practice of deep learning. Students will learn the foundational mathematics behind deep learning and explore topics such as multi-layer perceptrons (MLPs), back-propagation and automatic differentiation, convolutional neural networks (CNNs), recurrent neural networks (RNNs), transformers, generative models, and the role of data in training models. These techniques play a crucial role in modern AI systems, including image and video understanding, natural language processing, generative AI, robotics, medicine and scientific discovery. The various practical assessments will enhance student's understanding and intuition of deep learning and its application.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must have successfully completed: (COMP3670 or COMP6670 or COMP8410) AND (COMP1110 or COMP6710 or COMP7710 or COMP1730 or COMP6730).",
+      "requisiteCodes": [
+        "COMP3670",
+        "COMP6670",
+        "COMP8410",
+        "COMP1110",
+        "COMP6710",
+        "COMP7710",
+        "COMP1730",
+        "COMP6730"
+      ],
+      "incompatibleCodes": [],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP6242"
+    },
+    {
+      "code": "COMP6262",
+      "title": "Logic",
+      "units": 6,
+      "mode": "In Person",
+      "description": "Formal logic is the fundamental mathematics of computer science. Its impact ranges from the design of programming languages and hardware, to the specification and verification of critical software, to artificial intelligence systems that can reason. This course introduces propositional and predicate logic. We discuss how to reason within these logics, how to reason about their properties and limitations, and how to use them to model situations of interest in both natural language and computer science applications. We explore how computational thinking can help us solve logic problems.",
+      "convener": null,
+      "requisiteText": "You are not able to enrol in this course if you have previously completed PHIL2080 or COMP2620.",
+      "requisiteCodes": [
+        "PHIL2080",
+        "COMP2620"
+      ],
+      "incompatibleCodes": [],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP6262"
+    },
+    {
+      "code": "COMP6300",
+      "title": "Computer Architecture",
+      "units": 6,
+      "mode": "In Person",
+      "description": "This course is a rigorous introduction to the design of digital circuits and computer architecture. It provides technical foundations for how a computer system is built from the bottom up and how the high-level programming languages you learn in other courses are translated into simple instructions the computer executes. The course introduces the different abstraction layers necessary to make a computer system work, and a key focus is the connection between hardware and software.\n\nThe course introduces the predominant stored-program computer paradigm and principles of digital design and computer architecture. Students build a fully functional general-purpose computer from simple logic circuits in a digital simulator. The course also demystifies assembly code, the machine language the processor speaks, and the mapping of assembly programs to higher levels of programming abstraction. The focus is on fundamental techniques employed in the design of modern microprocessors and their hardware/software interface.\n\nThis course will challenge your understanding of how computers work and what happens in them when we run a program. At the end of this course, you will be able to navigate between layers of abstraction in a computer system, from individual digital circuits to high-level software, and understand how low-level structures enable and enhance the abilities of a computer system.\n\nThis course covers topics such as combinational and sequential logic design, digital building blocks such as arithmetic/logic unit and random access memory, instruction set architectures and assembly programming, input/output systems, interrupt handling, single-cycle and pipelined processor design, out-of-order execution, and hardware speculation.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must be: studying a Master of Computing OR Master of Computing (Advanced) OR have completed COMP6710 OR COMP7710 OR COMP1110. Incompatible with COMP2300, ENGN2219 and COMP6719.",
+      "requisiteCodes": [
+        "COMP6710",
+        "COMP7710",
+        "COMP1110"
+      ],
+      "incompatibleCodes": [
+        "COMP2300",
+        "ENGN2219",
+        "COMP6719"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP6300"
+    },
+    {
+      "code": "COMP6320",
+      "title": "Artificial Intelligence",
+      "units": 6,
+      "mode": "In Person",
+      "description": "Artificial intelligence is the science that studies and develops methods of making computers more intelligent. The focus of this course is on core AI techniques for search, knowledge representation and reasoning, planning, and designing intelligent agents. The course also aims to give an overview of the historical, philosophical, and logical foundations of AI.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must have completed (COMP6710 OR COMP7710 OR COMP1110 OR be enrolled in Master of Computing (Advanced)) AND have completed or be currently enrolled in COMP6262 OR COMP2620 Incompatible with COMP3620.",
+      "requisiteCodes": [
+        "COMP6710",
+        "COMP7710",
+        "COMP1110",
+        "COMP6262",
+        "COMP2620"
+      ],
+      "incompatibleCodes": [
+        "COMP3620"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP6320"
+    },
+    {
+      "code": "COMP6331",
+      "title": "Computer Networks",
+      "units": 6,
+      "mode": "In Person",
+      "description": "This course studies the standard models for the layered approach to communication between autonomous machines in a network, and the main characteristics of data transmission across various physical link types. It considers how to design networks and protocols for diverse situations, analyses several application and support protocols from a distributed systems viewpoint, and identifies significant problem areas in networked communications.\n\nTopics include: communication network architectures, signalling and modulation across physical media, real-world local and wide-area networks, internet protocol fundamentals, performance and monitoring of networks, routing, network security, and application protocols for distributed systems including web, email, video, internet-of-everything and other contemporary network topics.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must have completed: (COMP6710 OR COMP7710 OR COMP1110 OR COMP1140) OR (COMP6310 OR COMP2310) OR (COMP6442 OR COMP2100). Incompatible with COMP3310, ENGN3539, ENGN6539.",
+      "requisiteCodes": [
+        "COMP6710",
+        "COMP7710",
+        "COMP1110",
+        "COMP1140",
+        "COMP6310",
+        "COMP2310",
+        "COMP6442",
+        "COMP2100"
+      ],
+      "incompatibleCodes": [
+        "COMP3310",
+        "ENGN3539",
+        "ENGN6539"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP6331"
+    },
+    {
+      "code": "COMP6363",
+      "title": "Theory of Computation",
+      "units": 6,
+      "mode": "In Person",
+      "description": "This course covers the theoretical computer science areas of formal languages and automata, computability and complexity. Topics covered include the following: regular and context-free languages; finite automata and pushdown automata; Turing machines; computability - halting problem, solvable, and unsolvable problems; space and time complexity; classes P, NP and PSPACE; NP-Completeness.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must be studying Master of Computing OR Master of Computing (Advanced). Incompatible with COMP3630.",
+      "requisiteCodes": [],
+      "incompatibleCodes": [
+        "COMP3630"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP6363"
+    },
+    {
+      "code": "COMP6442",
+      "title": "Software Construction",
+      "units": 6,
+      "mode": "In Person",
+      "description": "This course extensively explores the fundamental principles and practices necessary for creating medium-scale software projects, with a specific focus on the object-oriented programming paradigm. By blending theoretical understanding with hands-on practice, students establish a robust foundation in software construction, drawing from their prior programming experience. Key topics, including programming techniques at large, life cycle models, data manipulation techniques, and GUI concepts, are highlighted to foster a comprehensive grasp of software development. Ultimately, the course empowers students with the skills to construct medium-scale software projects efficiently, ethically, and in alignment with industry standards.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must have either: completed (COMP6710 OR COMP7710 OR COMP1110 OR COMP1140); AND have completed or be currently enrolled in (MATH6005 OR COMP6260 OR MATH1005 OR COMP1600); OR be enrolled in the Master of Machine Learning and Computer Vision AND have completed (COMP6710 or COMP7710 or COMP1110 or COMP1140) OR be enrolled in the Master of Computing (Advanced). Incompatible with COMP2100.",
+      "requisiteCodes": [
+        "COMP6710",
+        "COMP7710",
+        "COMP1110",
+        "COMP1140",
+        "MATH6005",
+        "COMP6260",
+        "MATH1005",
+        "COMP1600"
+      ],
+      "incompatibleCodes": [
+        "COMP2100"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP6442"
+    },
+    {
+      "code": "COMP6445",
+      "title": "Computing Research Methods",
+      "units": 6,
+      "mode": "In Person",
+      "description": "The course introduces students to some fundamentals of research methodology. The course comprises a series of lectures which cover the following topics: Philosophy of Science, Quantitative Research Methods, Qualitative Research Methods, Basic Machine Learning Methods, Theoretical Research Methods, How to find a Research Topic, Literature Analysis, Reading and Reviewing Papers, Research Ethics and Commercialising Research.\n\nThe lectures will be complemented by a series of workshops, labs and assignments that require students to do some small research-focused tasks that help them get a hands-on experience of research, both individually and in teams of students. This includes different tasks such as topic modelling, statistical analysis, applying different machine learning techniques to solve a problem in a team, proving theorems, complexity analysis, designing a research project, reviewing papers and presenting papers.\n\nWorkshops cover topics such as research integrity, time management and project management, teamwork, reading strategies, report writing, and presenting research. At the end of the course, students will be confident to start working on their own research projects.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must be enrolled in Master of Computing (Advanced) (VCOMP) or Master of Machine Learning and Computer Vision (MMLCV). Incompatible with COMP2550 and COMP4450",
+      "requisiteCodes": [],
+      "incompatibleCodes": [
+        "COMP2550",
+        "COMP4450"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP6445"
+    },
+    {
+      "code": "COMP6528",
+      "title": "Computer Vision",
+      "units": 6,
+      "mode": "In Person",
+      "description": "Computer Vision is an important field of Artificial Intelligence concerned with automatically extracting useful information from images or videos. The explosive growth in digital imaging technologies, vision datasets and deep learning makes the problems of automated image interpretation even more exciting and more relevant than ever. This course introduces students to fundamental problems in computer vision and foundational techniques for solving them. Topics covered in detail include: image formation, image filtering, camera geometry, thresholding and image segmentation, edge, point and feature detection, geometric frameworks for vision, single view and two views geometry, 3D visual reconstruction, camera calibration, stereo vision, image classification, object recognition, deep learning and neural networks. The course features extensive practical components including computer labs that provide students with the opportunity to practice and refine their skills in computer vision.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must be studying one of: Graduate Diploma of Computing Master of Computing Master of Computing (Advanced). Master of Machine Learning and Computer Vision Incompatible with ENGN6528 and COMP4528 and ENGN4528.",
+      "requisiteCodes": [],
+      "incompatibleCodes": [
+        "ENGN6528",
+        "COMP4528",
+        "ENGN4528"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP6528"
+    },
+    {
+      "code": "COMP6710",
+      "title": "Structured Programming",
+      "units": 6,
+      "mode": "In Person",
+      "description": "This is an introductory programming course that teaches basic concepts in imperative and object-oriented programming and corresponding data structures for students with some previous programming experience.\n\nStudents will learn to use an industrial-strength object-oriented programming language and form basic mental models of how computer programs execute and interact with their environment. The course focuses on key aspects of solving programming problems: reasoning about a problem description to design appropriate data representations and function/method descriptions, to find examples, to write, test, debug, and otherwise evaluate the relevant code, and to present and defend their approach.\n\nStudents will learn to effectively use a large standard library and key standard data structures, including lists, trees, hash tables, and graphs. The course also introduces the basics of reasoning about the time and space complexity of algorithms, in particular as related to the above data structures.",
+      "convener": null,
+      "requisiteText": "You are not able to enrol in this course if you are enrolled in the Master of Computing (Advanced). Incompatible with COMP1110 OR COMP1140 OR COMP7710.",
+      "requisiteCodes": [],
+      "incompatibleCodes": [
+        "COMP1110",
+        "COMP1140",
+        "COMP7710"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP6710"
+    },
+    {
+      "code": "COMP6730",
+      "title": "Programming for Scientists",
+      "units": 6,
+      "mode": "In Person",
+      "description": "This course teaches introductory programming, fundamental programming language and computer science concepts, and computational problem solving illustrated with applications common in science and engineering, such as data analysis, visualisation, and image processing. We will take a different approach, including prompting and working with GenAI, with emphasis on testing, debugging and problem decomposition, and using GenAI to help understand code.\n\nThese skills will empower students to write software with the aid of GenAI. Assessment will include exam(s) without the aid of GenAI. Students will also create larger software projects with the aid of GenAI. The course does not require any prior knowledge of programming or computer science. It is designed to be a stand-alone computing unit.\n\nStudents who wish to study computing courses at a higher level should check course prerequisites as they may need to complete COMP6710 or COMP7710 in addition to COMP6730.",
+      "convener": null,
+      "requisiteText": "You are not able to enrol in this course if you have successfully completed COMP1100, COMP1130, COMP1730, COMP6710 or COMP7710.",
+      "requisiteCodes": [
+        "COMP1100",
+        "COMP1130",
+        "COMP1730",
+        "COMP6710",
+        "COMP7710"
+      ],
+      "incompatibleCodes": [],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP6730"
+    },
+    {
+      "code": "COMP6800",
+      "title": "Cyber Security Foundations",
+      "units": 6,
+      "mode": "In Person",
+      "description": "Cyber Security Foundations introduces all essential cyber security principles. This includes principles of secure design, secrets minimization, least privilege, isolation, separation and encapsulation. The interplay between failed security principles and vulnerabilities is investigated in detail, and ethical considerations in vulnerability disclosure are discussed.\n\nThe course provides the essential foundations which allow students to continue in a more in-depth cyber security career, yet can also be used a standalone unit to provide a self-contained set of knowledge.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must be enrolled in Masters of Computing (Advanced). Incompatible with COMP2700.",
+      "requisiteCodes": [],
+      "incompatibleCodes": [
+        "COMP2700"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP6800"
+    },
+    {
+      "code": "COMP7710",
+      "title": "Programming Fundamentals",
+      "units": 12,
+      "mode": "In Person",
+      "description": "This course provides Students with the opportunity to develop a solid understanding of programming that is essential before progressing to more advanced concepts. It is structured to demonstrate and provide the students with practice in the fundamentals of structured programming. It is designed for Postgraduate students who do not have a programming background.\n\nStudents will learn to use an industrial-strength object-oriented programming language and form basic mental models of how computer programs execute and interact with their environment. The course focuses on key aspects of solving programming problems: reasoning about a problem description to design appropriate data representations and function/method descriptions, to find examples, to write, test, debug, and otherwise evaluate the relevant code, and to present and defend their approach.\n\nStudents will learn to effectively use a large standard library and key standard data structures, including lists, trees, hash tables, and graphs. The course also introduces the basics of reasoning about the time and space complexity of algorithms, in particular as related to the above data structures.",
+      "convener": null,
+      "requisiteText": "You are not able to enrol in this course if you have previously completed or are currently enrolled in COMP1110 OR COMP1140 OR COMP6710",
+      "requisiteCodes": [
+        "COMP1110",
+        "COMP1140",
+        "COMP6710"
+      ],
+      "incompatibleCodes": [],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP7710"
+    },
+    {
+      "code": "COMP8045",
+      "title": "Advanced Topics in Computer Systems & Architecture",
+      "units": 6,
+      "mode": "In Person",
+      "description": "This course offers students a unique opportunity for the advanced study of a special thematic area within the discipline of computer systems and architecture. The topics will vary from year to year in response to emerging theoretical and practical issues in the discipline, as well as the research interests and expertise of academics and sessional staff. They could include (but not limited to) the following topics: micro architecture, garbage collection, memory design, and micro kernels.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must have successfully completed 12 units of 6000-level COMP coded courses. Additional Prerequisite courses for the Advanced Topic will be listed on the SoCo website when the course topic is announced. Students who meet the pre-requisites can request a permission code following the instructions on Enrolling in CSS courses.",
+      "requisiteCodes": [],
+      "incompatibleCodes": [],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8045"
+    },
+    {
+      "code": "COMP8131",
+      "title": "Managing Software Quality and Process",
+      "units": 6,
+      "mode": "In Person",
+      "description": "This course introduces students to advanced topics on managing the quality of products delivered as part of a software development project and managing the development process itself through static and dynamic software analysis techniques.\n\nSeveral causal aspects of poor software quality will be introduced and discussed so that students can understand the context for undertaking risk management and avoiding bad quality. There will be a focus on practical techniques for identifying and removing defects, as well as implementing procedures to track the success or failure of risk and defect resolutions.\n\nSeveral automatic software quality analysis techniques, including static program analysis and fuzzing techniques, will also be covered. These techniques are useful for improving the reliability, security, and performance of software and are becoming increasingly impactful in industries today. The course will introduce various well-known static program analysis frameworks such as Soot and dynamic testing techniques like symbolic execution. Practical implementations will also be covered, including live variable analysis, constant propagation, dead code detection, call graph construction, pointer analysis, taint analysis, and symbolic execution.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must be enrolled in the Masters of Computing Advanced (VCOMP) and have successfully completed COMP6800 Cyber Security Foundations. Incompatible with COMP4130.",
+      "requisiteCodes": [
+        "COMP6800"
+      ],
+      "incompatibleCodes": [
+        "COMP4130"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8131"
+    },
+    {
+      "code": "COMP8280",
+      "title": "Responsible Practice, Innovation and Leadership",
+      "units": 6,
+      "mode": "In Person",
+      "description": "This professional practice course for computing and engineering graduate students focuses on developing professional and communication skills essential for the 21st-century workplace.\n\nThe course builds upon individual capacity, and further develops students’ professional skills, values, and attributes in ways that directly complement their technical expertise. These skills will enable students to perform effectively in the complex transdisciplinary environments in which computing and engineering professionals operate. In particular, the course will provide students with skills to interpret, critically evaluate, and justify their own and others’ decisions with reference to ethical and professional standards and expectations. The practical focus on these skills and their integration into the computing and engineering curriculum reflects the contemporary expectations of professional organisations (e.g. ACS (Australian Computer Society) and Engineers Australia) and enhances the employment and leadership opportunities of graduates.",
+      "convener": "AsPr Susan Hansen, Dr Catherine Galvin",
+      "requisiteText": "To enrol in this course you must be enrolled in the Graduate Diploma of Computing or Master of Computing or Master of Computing (Advanced) or Master of Machine Learning and Computer Vision. Incompatible with COMP8260, ENGN8260 and ENGN8280.",
+      "requisiteCodes": [],
+      "incompatibleCodes": [
+        "COMP8260",
+        "ENGN8260",
+        "ENGN8280"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8280"
+    },
+    {
+      "code": "COMP8300",
+      "title": "Parallel Systems",
+      "units": 6,
+      "mode": "In Person",
+      "description": "A practically oriented introduction to programming paradigms for parallel computers. Considers definitions of program efficiency on parallel computers, addresses the modelling, analysis and measurement of program performance. Description, implementation and use of parallel programming languages, parallel features of operating systems, library routines and applications.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must have completed: COMP6310/2310 OR COMP6330/3300 OR COMP6331/3310 OR COMP6464 OR ENGN6539 Incompatible with COMP4300.",
+      "requisiteCodes": [
+        "COMP6310",
+        "COMP6330",
+        "COMP6331",
+        "COMP6464",
+        "ENGN6539"
+      ],
+      "incompatibleCodes": [
+        "COMP4300"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8300"
+    },
+    {
+      "code": "COMP8350",
+      "title": "Sound and Music Computing",
+      "units": 6,
+      "mode": "In Person",
+      "description": "Do you want to create sound and music with your computer? Do you want to build new kinds of musical instruments? Do you want to be a part of a laptop band? This is the course for you!\n\nThis course is an introduction to the fundamental concepts of music computing, including digital synthesis, algorithmic composition, and musical interface design. Students will develop their knowledge by creating computer musical instruments in music programming languages and developing new computer music works to present in concert with an ensemble of other students.\n\nModern music technology exists at the forefront of computing practice and involves new live programming paradigms, human interface design, digital signal processing, networking, and machine learning. Students will gain experience in these concepts and learn how to conceptualise and realise new computer music instruments, compositions, and performances. Students will engage with recent developments in sound and music computing, including within the research literature to develop a high level of knowledge at the cutting edge of computing for the creative arts.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must have completed either COMP6390 or COMP6720. Incompatible with COMP4350.",
+      "requisiteCodes": [
+        "COMP6390",
+        "COMP6720"
+      ],
+      "incompatibleCodes": [
+        "COMP4350"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8350"
+    },
+    {
+      "code": "COMP8410",
+      "title": "Data Mining",
+      "units": 6,
+      "mode": "In Person",
+      "description": "Massive amounts of data are collected by public and private organisations, while the Web offers rich information about almost every aspect of human life and society. Analysing such data can provide significant benefits to an organisation or research project. This course provides a practical focus on the technology and research in the area of data mining. It focuses on the algorithms and techniques and less on the mathematical and statistical foundations.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must have completed COMP7240 or COMP6240 or COMP2400; and COMP6730 or COMP7230 or COMP6710. Incompatible with COMP3420 and COMP3425 and COMP8400 and COMP8910.",
+      "requisiteCodes": [
+        "COMP7240",
+        "COMP6240",
+        "COMP2400",
+        "COMP6730",
+        "COMP7230",
+        "COMP6710"
+      ],
+      "incompatibleCodes": [
+        "COMP3420",
+        "COMP3425",
+        "COMP8400",
+        "COMP8910"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8410"
+    },
+    {
+      "code": "COMP8535",
+      "title": "Engineering Data Analytics",
+      "units": 6,
+      "mode": "In Person",
+      "description": "Data-driven decision-making is an essential component of emerging systems that generate and consume very large amounts of sensing data from autonomous vehicles to digital pathology. This course covers technologies and methodologies necessary for inferring useful information and identifying underlying patterns from often raw, incomplete, noisy and corrupted data that is present in real-life applications. It will also give students the opportunity to explore advanced solutions of data analytics such as dimensionality reduction, sparse encoding, compressive sensing, nonlinear filtering, manifold learning, and generative data modelling.",
+      "convener": "Prof Nan Yang",
+      "requisiteText": "To enrol in this course you must be studying: Master of Computing (Advanced) OR Master of Machine Learning and Computer Vision AND have completed 12 units of 6000-level COMP coded courses.",
+      "requisiteCodes": [],
+      "incompatibleCodes": [],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8535"
+    },
+    {
+      "code": "COMP8600",
+      "title": "Statistical Machine Learning",
+      "units": 6,
+      "mode": "In Person",
+      "description": "This course provides a broad but thorough introduction to the methods and practice of statistical machine learning. Topics covered will include Bayesian inference and maximum likelihood; regression, classification, density estimation, clustering, principal and independent component analysis; parametric, semi-parametric, and non-parametric models; basis functions, neural networks, kernel methods, and graphical models; deterministic and stochastic optimisation; overfitting, regularisation, and validation.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must have completed COMP6670 or COMP3670. Incompatible with COMP4670.",
+      "requisiteCodes": [
+        "COMP6670",
+        "COMP3670"
+      ],
+      "incompatibleCodes": [
+        "COMP4670"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8600"
+    },
+    {
+      "code": "COMP8610",
+      "title": "Computer Graphics",
+      "units": 6,
+      "mode": "In Person",
+      "description": "Computer graphics are an essential part of modern software. In this course, students will learn about fundamental algorithms, data structures and programming models used in 3D graphics applications. These key concepts in computer graphics programming will be covered from their mathematical foundations through to their application in domains such as data visualisation, virtual reality, computer games and film animation/VFX. In this course students will explore these concepts through practical implementation in a modern computer graphics software context.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must: be studying VCOMP OR be studying MMLCV and have completed COMP6710 or COMP1110 or COMP1140 OR have completed (COMP6710 or COMP1110 or COMP1140) and have completed (COMP6390 or COMP6442 or COMP6540 or COMP6780 or COMP6720). You are not able to enrol in this course if you have successfully completed COMP4610 or COMP6461.",
+      "requisiteCodes": [
+        "COMP6710",
+        "COMP1110",
+        "COMP1140",
+        "COMP6390",
+        "COMP6442",
+        "COMP6540",
+        "COMP6780",
+        "COMP6720",
+        "COMP4610",
+        "COMP6461"
+      ],
+      "incompatibleCodes": [],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8610"
+    },
+    {
+      "code": "COMP8650",
+      "title": "Advanced Topics in Machine Learning",
+      "units": 6,
+      "mode": "In Person",
+      "description": "This course explores a selected area relevant to statistical machine learning in depth, and will be taught by an SML staff member of internationally recognised standing and research interest in that area. Based on current SML staffing, this will be one of:\n\nkernel methods\n\nstructured probabilistic models\n\nreinforcement learning\n\nconvex analysis and optimisation\n\ntopics in information theory\n\ndecision theory\n\ndeep learning\n\ndifferentiable optimisation in deep learning\n\nOver the past several years the content has alternated between “convex analysis and optimisation” and “differentiable optimisation in deep learning\". Students should contact the course convenor to find out what topic is planned for the coming semester.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must have completed COMP6670 Introduction to Machine Learning or COMP8600 Statistical Machine Learning. Additional Prerequisite courses for the Advanced Topic will be listed on the SoCo website (Special Topics in Computing page ) when the course topic is announced. Students who meet the pre-requisites can request a permission code following the instructions for Enrolling in CECC courses.",
+      "requisiteCodes": [
+        "COMP6670",
+        "COMP8600"
+      ],
+      "incompatibleCodes": [],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8650"
+    },
+    {
+      "code": "COMP8703",
+      "title": "Vulnerability Research and Exploit Mitigation",
+      "units": 6,
+      "mode": "In Person",
+      "description": "Historically, major defensive security techniques for software systems were developed as a response to the emergence of classes of exploitation techniques. The aims of such defensive techniques are usually not about preventing software developers from writing insecure code, but rather, they are aimed at preventing bugs in software to be exploited by attackers to compromise their targets. Vulnerability Research and Exploit Mitigation examines important exploit mitigation techniques deployed in modern software systems through an adversarial lens: software vulnerabilities are explored in depth, through how they can be discovered and exploited, in order to understand the mechanisms behind the exploit mitigation techniques. The course covers topics ranging from common patterns in software vulnerabilities, such as stack-based buffer overflow, format string vulnerabilities, and heap-based vulnerabilities; exploitation techniques such as code injection, code obfuscation, return-oriented-programming; techniques for vulnerability discovery, such as program binaries reverse engineering, fuzzing and symbolic execution; and mitigation techniques such as memory protection mechanisms, input sanitization, and control flow integrity protection. The course features hands-on lectures and labs to analyse software vulnerabilities, both in the source code and in program binaries, to develop proof-of-concept exploits, and to design and implement appropriate mitigation techniques against exploitation. Students will learn state-of-the-art vulnerability research and exploitation tools and techniques, and apply their knowledge on case studies involving real-world software systems.",
+      "convener": null,
+      "requisiteText": "To enrol in this course, you must be enrolled in the Master of Computing (Advanced) and have completed COMP6034 or COMP3704. Incompatible with COMP3703 and COMP4703.",
+      "requisiteCodes": [
+        "COMP6034",
+        "COMP3704"
+      ],
+      "incompatibleCodes": [
+        "COMP3703",
+        "COMP4703"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8703"
+    },
+    {
+      "code": "COMP8715",
+      "title": "Advanced Computing Team Project",
+      "units": 6,
+      "mode": "In Person",
+      "description": "COMP8715 is an annual course (6+6) that must be completed twice, in consecutive semesters.\n\nStudents will conduct a project, under supervision, that will act as a capstone to their degree program, and increase the depth of their knowledge in the computing area. The project will be undertaken in small teams. The activities in the course will normally include some combination of reading, writing, artefact construction and presentation, as appropriate to the project's topic. Application of research methodologies in literature review and evaluation will also be undertaken. Topic-specific learning objectives, project overview and assessment arrangements will be specified at the outset of the course.\n\nTo enrol in this course you must meet the eligibility criteria, which includes membership of a student project group before the end of week 1, where the project has been approved by the convener.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must meet the eligibility criteria, which include membership of a student project group before the end of week 1, where the project has been approved by the convener. To enrol in this course you must: be enrolled in the Master of Computing (MCOMP) AND have successfully completed: (COMP6442 or COMP2100) AND (COMP6250 or COMP8260 or COMP8280) AND have successfully completed or be currently enrolled in (COMP2120 or COMP6120) OR be enrolled in the Master of Machine Learning and Computer Vision (MMLCV) AND have successfully completed: (COMP6442 or COMP2100) AND (COMP6250 or COMP8260 or COMP8280) Incompatible with COMP8755 and COMP8830 and COMP8800.",
+      "requisiteCodes": [
+        "COMP6442",
+        "COMP2100",
+        "COMP6250",
+        "COMP8260",
+        "COMP8280",
+        "COMP2120",
+        "COMP6120"
+      ],
+      "incompatibleCodes": [
+        "COMP8755",
+        "COMP8830",
+        "COMP8800"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8715"
+    },
+    {
+      "code": "COMP8800",
+      "title": "Advanced Computing Research Project",
+      "units": 12,
+      "mode": "In Person",
+      "description": "COMP8800 is an Annual course (12+12) that must be completed twice, in consecutive semesters.\n\nThis course requires students to conduct a substantial individual research project under academic supervision, with a formal thesis being submitted and presentation of a seminar or poster.\n\nThis course will allow you to apply your Computer Science knowledge and skills in the planning and execution of your research project. This course provides you with the opportunity to deeply engage with the course content, drive your leaning, build skills and confidence in undertaking a research project.",
+      "convener": null,
+      "requisiteText": "To enrol in this course you must: be enrolled in the Master of Computing (Advanced) OR Master of Machine Learning and Computer Vision AND have completed or be currently enrolled in COMP6445 AND have completed (COMP8280 or COMP8260 or COMP6250) AND have completed 36 units of COMP courses AND have a GPA of 6 out of 7 AND receive a permission code by completing the steps listed on Enrolling in student projects and having submitted the Student Project Registration Form. Incompatible with COMP8715 and COMP8830.",
+      "requisiteCodes": [
+        "COMP6445",
+        "COMP8280",
+        "COMP8260",
+        "COMP6250"
+      ],
+      "incompatibleCodes": [
+        "COMP8715",
+        "COMP8830"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8800"
+    },
+    {
+      "code": "COMP8820",
+      "title": "Exchange Program for Graduate Students in Computer Science",
+      "units": 6,
+      "mode": "In Person",
+      "description": "Students enrol in this course when they have been approved to participate in a formal Computing exchange with one of the Australian National University's overseas exchange partners.\n\nFor information regarding Computing exchanges, selection criteria, etc, please go to the following website: Student exchange | ANU College of Engineering, Computing & Cybernetics",
+      "convener": null,
+      "requisiteText": "",
+      "requisiteCodes": [],
+      "incompatibleCodes": [],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8820"
+    },
+    {
+      "code": "COMP8830",
+      "title": "Computing Internship",
+      "units": 12,
+      "mode": "In Person",
+      "description": "This course will enable computer science students to develop competencies expected of professionals working in business, government or the broader community. A list of available internship opportunities will be maintained for which students can apply. A holistic selection process will be used to select the best applicant for each opportunity. Students can also propose internships, but these will always be established following negotiations between the ANU and the potential host organisations, before being offered to students along with other opportunities.",
+      "convener": "Dr Nisansala Yatapanage, Dr Penny Kyburz",
+      "requisiteText": "To enrol in this course you must: Be enrolled in the Master of Computing (MCOMP) or Master of Machine Learning and Computer Vision (MMLCV) and have successfully completed: COMP6442 and (COMP8280 or COMP6250 or COMP8260) Incompatible with COMP8715 and COMP8755 and COMP8800. You will need to undergo competitive entry to enrol in this course.",
+      "requisiteCodes": [
+        "COMP6442",
+        "COMP8280",
+        "COMP6250",
+        "COMP8260"
+      ],
+      "incompatibleCodes": [
+        "COMP8715",
+        "COMP8755",
+        "COMP8800"
+      ],
+      "classStart": "2027-02-22",
+      "enrolBy": "2027-03-01",
+      "census": "2027-03-31",
+      "classEnd": "2027-05-28",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/2027/course/COMP8830"
+    }
+  ]
+}
