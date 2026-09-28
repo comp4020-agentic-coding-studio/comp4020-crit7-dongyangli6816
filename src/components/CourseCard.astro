@@ -1,0 +1,94 @@
+---
+// One course in the list: what it is, when it meets, and — before anything is
+// pressed — whether this student can take it and why not.
+//
+// The course code appears once as text, plus once as the enrol button's
+// value while the course can be enrolled in. Everything else (ids, links,
+// reasons) uses lowercase or titles: spec/enrolment.test.ts counts
+// mentions of the code on /enrol/.
+import type { CourseView } from "../lib/enrolment";
+import { firstSentence, meetingSummary } from "../lib/format";
+
+interface Props {
+  course: CourseView;
+  /** why the server just refused this course, if it did */
+  refusal?: string;
+  /** filtered out of the current view */
+  hidden?: boolean;
+}
+const { course, refusal, hidden = false } = Astro.props;
+const key = course.code.toLowerCase();
+const e = course.eligibility;
+const level = course.code.charAt(4);
+const times = meetingSummary(course.slots);
+const clash = course.clashesWith[0];
+const canEnrol = e.state === "can-take";
+
+const status = (() => {
+  if (refusal) return { tone: "bad", icon: "✕", text: refusal };
+  switch (e.state) {
+    case "in-plan":
+      return clash
+        ? { tone: "warn", icon: "!", text: `In your plan. Clashes with ${clash.title} on ${clash.day} at ${clash.start}.` }
+        : { tone: "done", icon: "✓", text: "In your plan" };
+    case "completed":
+      return { tone: "muted", icon: "✓", text: "You've completed this course" };
+    case "can-take":
+      return clash
+        ? {
+            tone: "warn",
+            icon: "!",
+            text: `You can take this, but it clashes with ${clash.title} on ${clash.day} at ${clash.start}.`,
+          }
+        : { tone: "ok", icon: "✓", text: "You can take this" };
+    default:
+      return { tone: e.state === "permission" ? "info" : "bad", icon: e.state === "permission" ? "i" : "✕", text: e.reason };
+  }
+})();
+---
+
+<li
+  class={`card card--${status.tone}`}
+  id={`course-${key}`}
+  data-search={`${key} ${course.title} ${course.description}`.toLowerCase()}
+  data-level={level}
+  data-open={canEnrol ? "1" : "0"}
+  hidden={hidden}
+>
+  <article aria-labelledby={`t-${key}`}>
+    <h3 class="card__title" id={`t-${key}`}>
+      <a href={`/courses/${key}/`}>
+        <span class="code">{course.code}</span>
+        <span class="name">{course.title}</span>
+      </a>
+    </h3>
+    <p class="card__meta">
+      <span>{course.units} units</span>
+      <span>{course.mode}</span>
+      <span>{course.convener ?? "Convener not yet announced"}</span>
+    </p>
+    <p class="card__summary">{firstSentence(course.description)}</p>
+    {times && <p class="card__times">{times}</p>}
+    <div class="card__foot">
+      <p
+        class={`status status--${status.tone}`}
+        id={`s-${key}`}
+        role={refusal ? "alert" : undefined}
+        tabindex={refusal ? -1 : undefined}
+        data-refusal={refusal ? "" : undefined}
+      >
+        <span class="status__icon" aria-hidden="true">{status.icon}</span>
+        <span>{status.text}</span>
+      </p>
+      {
+        canEnrol && (
+          <form method="post" action="/api/enrolments">
+            <button class="button" name="courseCode" value={course.code} aria-describedby={`t-${key} s-${key}`}>
+              Enrol
+            </button>
+          </form>
+        )
+      }
+    </div>
+  </article>
+</li>

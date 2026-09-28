@@ -3,6 +3,7 @@
 export const ROUTES = [
   "/",
   "/readme/",
-  // Uncomment once the enrolment page exists, so the invariants cover it too:
-  // "/enrol/",
+  "/enrol/",
+  // one course page stands in for all of them: they share a template
+  "/courses/comp6240/",
 ];

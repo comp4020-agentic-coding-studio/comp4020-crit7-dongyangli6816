@@ -1,0 +1,58 @@
+---
+// The frame every page shares: document basics the invariants check (lang,
+// title, viewport, one labelled nav), the fonts and styles, and the footer
+// crediting ANU for the course data.
+//
+// Nothing up here may look like a course code: spec/enrolment.test.ts takes
+// the first [A-Z]{4}\d{4} on /enrol/ as the course to enrol in.
+import { DATA_SOURCES } from "../lib/enrolment";
+import "../styles.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = "Find, check and enrol in ANU courses in one place." } = Astro.props;
+const path = Astro.url.pathname;
+const current = (href: string) => (path.startsWith(href) ? "page" : undefined);
+---
+
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="masthead">
+      <div class="masthead__inner">
+        <a class="brand" href="/enrol/">
+          <span class="brand__mark" aria-hidden="true">ANU</span>
+          <span class="brand__name">Enrolment</span>
+        </a>
+        <nav aria-label="Site">
+          <a href="/enrol/" aria-current={current("/enrol/")}>Choose courses</a>
+          <a href="/readme/" aria-current={current("/readme/")}>About this prototype</a>
+        </nav>
+      </div>
+    </header>
+    <slot />
+    <footer class="footer">
+      <p>
+        A student prototype, not an ANU service. Course details from
+        <a href={DATA_SOURCES.catalogue.url}>ANU Programs and Courses</a>, fetched
+        {DATA_SOURCES.catalogue.fetchedAt}; teaching times from the
+        <a href={DATA_SOURCES.timetable.url}>ANU timetable</a> ({DATA_SOURCES.timetable.session}).
+      </p>
+    </footer>
+  </body>
+</html>

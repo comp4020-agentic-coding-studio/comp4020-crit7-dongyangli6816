@@ -1,0 +1,231 @@
+---
+// The enrolment page: find a course, see whether you can take it before you
+// press anything, enrol in one step, and watch your plan and week change.
+// It answers the ISIS journey recorded in docs/research/isis-enrolment.md.
+//
+// Filters are a GET form, so a filtered list is a link and works without
+// JavaScript; the script below only makes the same filtering live.
+import CourseCard from "../../components/CourseCard.astro";
+import PlanPanel from "../../components/PlanPanel.astro";
+import Base from "../../layouts/Base.astro";
+import {
+  enrolmentView,
+  findStudent,
+  listStudents,
+  SESSION,
+  STUDENT_COOKIE,
+} from "../../lib/enrolment";
+import { PROGRAMS, type Program } from "../../data/requisites";
+
+const student = findStudent(Astro.cookies.get(STUDENT_COOKIE)?.value);
+const students = listStudents();
+const view = enrolmentView(student);
+
+// A refusal handed over by POST /api/enrolments: show it, with its status.
+const refusal = Astro.locals.enrolRefusal;
+if (refusal) Astro.response.status = refusal.status;
+const refusedCard = refusal && view.courses.some((c) => c.code === refusal.code) ? refusal.code : undefined;
+
+const params = Astro.url.searchParams;
+const q = (params.get("q") ?? "").trim();
+const level = params.get("level") ?? "";
+const onlyOpen = params.get("open") === "1";
+
+const shown = view.courses.filter((c) => {
+  if (level && c.code.charAt(4) !== level) return false;
+  if (onlyOpen && c.eligibility.state !== "can-take") return false;
+  if (q) {
+    const hay = `${c.code} ${c.title} ${c.description}`.toLowerCase();
+    if (!q.toLowerCase().split(/\s+/).every((w) => hay.includes(w))) return false;
+  }
+  return true;
+});
+
+const enrolledId = Number(params.get("enrolled")) || undefined;
+const enrolled = view.plan.find((p) => p.enrolmentId === enrolledId);
+const droppedKey = params.get("dropped");
+const dropped = droppedKey ? view.courses.find((c) => c.code.toLowerCase() === droppedKey) : undefined;
+const openCount = view.courses.filter((c) => c.eligibility.state === "can-take").length;
+---
+
+<Base title={`Choose courses · ${SESSION} · ANU Enrolment`}>
+  <main id="main" class="enrol">
+    <div class="page-head">
+      <div>
+        <p class="eyebrow">{SESSION}</p>
+        <h1>Choose your courses</h1>
+        <p class="lede">See whether you can take a course, and how it fits your week, before you enrol.</p>
+      </div>
+      <form class="who" method="post" action="/api/student">
+        <label for="student">Viewing as</label>
+        <div class="who__row">
+          <select id="student" name="student">
+            {
+              students.map((s) => (
+                <option value={s.id} selected={s.id === student.id}>
+                  {s.name} · {PROGRAMS[s.program as Program]}
+                </option>
+              ))
+            }
+          </select>
+          <button class="button button--quiet">Switch</button>
+        </div>
+      </form>
+    </div>
+
+    <a class="plan-summary" href="#plan">
+      {view.plan.length} {view.plan.length === 1 ? "course" : "courses"} · {view.record.plannedUnits} of 24 units
+      <span aria-hidden="true">↓</span>
+    </a>
+
+    {
+      enrolled && (
+        <div class="banner banner--ok" role="status" tabindex="-1" data-focus>
+          <p>
+            Enrolled in <strong>{enrolled.course.title}</strong>.
+          </p>
+          <form method="post" action={`/api/enrolments/${enrolled.enrolmentId}/drop`}>
+            <button class="button button--quiet">Undo</button>
+          </form>
+        </div>
+      )
+    }
+    {
+      dropped && (
+        <div class="banner" role="status" tabindex="-1" data-focus>
+          <p>
+            Dropped <strong>{dropped.title}</strong>.
+          </p>
+        </div>
+      )
+    }
+    {
+      refusal && !refusedCard && (
+        <div class="banner banner--bad" role="alert" tabindex="-1" data-focus>
+          <p>{refusal.reason}</p>
+        </div>
+      )
+    }
+
+    <div class="layout">
+      <section class="catalogue" aria-labelledby="find-h">
+        <h2 id="find-h" class="visually-hidden">Find a course</h2>
+        <form class="filters" method="get" action="/enrol/" role="search">
+          <div class="search">
+            <label for="q">Search by code, name or keyword</label>
+            <input id="q" name="q" type="search" value={q} autocomplete="off" placeholder="e.g. machine learning" />
+          </div>
+          <fieldset class="chips">
+            <legend>Level</legend>
+            {
+              [
+                ["", "All"],
+                ["6", "6000"],
+                ["7", "7000"],
+                ["8", "8000"],
+              ].map(([value, label]) => (
+                <label class="chip">
+                  <input type="radio" name="level" value={value} checked={level === value} />
+                  <span>{label}</span>
+                </label>
+              ))
+            }
+          </fieldset>
+          <label class="chip chip--toggle">
+            <input type="checkbox" name="open" value="1" checked={onlyOpen} />
+            <span>Only courses I can take ({openCount})</span>
+          </label>
+          <button class="button" data-no-js>Search</button>
+        </form>
+
+        <p class="count" aria-live="polite" id="count">
+          {shown.length === view.courses.length ? `All ${shown.length} courses` : `${shown.length} of ${view.courses.length} courses`}
+        </p>
+
+        <ol class="courses" id="courses">
+          {
+            view.courses.map((c) => (
+              <CourseCard
+                course={c}
+                hidden={!shown.includes(c)}
+                refusal={c.code === refusedCard ? refusal?.reason : undefined}
+              />
+            ))
+          }
+        </ol>
+        <p class="empty" id="empty" hidden={shown.length > 0}>
+          No courses match. Try fewer words, or clear the level and “only courses I can take”.
+        </p>
+      </section>
+
+      <PlanPanel
+        plan={view.plan}
+        units={view.record.plannedUnits}
+        justEnrolled={enrolledId}
+      />
+    </div>
+  </main>
+
+  <script is:inline define:vars={{ studentId: student.id }}>
+    document.documentElement.classList.add("js");
+
+    // Bring the result of the last action into view and to screen readers.
+    const focus = document.querySelector("[data-refusal]") ?? document.querySelector("[data-focus]");
+    if (focus) {
+      focus.closest(".card")?.scrollIntoView({ block: "center" });
+      focus.focus({ preventScroll: !!focus.closest(".card") });
+    }
+
+    // Live filtering: the same rules as the server-side GET, applied as you
+    // type, with the URL kept in step so the view stays linkable.
+    const form = document.querySelector(".filters");
+    const cards = [...document.querySelectorAll(".card")];
+    const count = document.querySelector("#count");
+    const empty = document.querySelector("#empty");
+    const total = cards.length;
+    function apply() {
+      const data = new FormData(form);
+      const words = String(data.get("q") ?? "").toLowerCase().trim().split(/\s+/).filter(Boolean);
+      const level = String(data.get("level") ?? "");
+      const open = data.get("open") === "1";
+      let shown = 0;
+      for (const card of cards) {
+        const ok =
+          (!level || card.dataset.level === level) &&
+          (!open || card.dataset.open === "1") &&
+          words.every((w) => card.dataset.search.includes(w));
+        card.hidden = !ok;
+        if (ok) shown++;
+      }
+      count.textContent = shown === total ? `All ${total} courses` : `${shown} of ${total} courses`;
+      empty.hidden = shown > 0;
+      const params = new URLSearchParams();
+      if (words.length) params.set("q", words.join(" "));
+      if (level) params.set("level", level);
+      if (open) params.set("open", "1");
+      history.replaceState(null, "", `/enrol/${params.size ? `?${params}` : ""}`);
+    }
+    // Every card is rendered, hidden or not, so the script can widen a
+    // filter the server narrowed.
+    if (form && cards.length) {
+      form.addEventListener("input", apply);
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        apply();
+      });
+    }
+
+    // Another tab changed this student's plan: show the new one. This tab's
+    // own enrol or drop fires the same event mid-navigation; reloading then
+    // would cancel the redirect and lose its confirmation, so a tab that is
+    // submitting ignores it.
+    let submitting = false;
+    document.addEventListener("submit", (e) => {
+      if (e.target.method === "post") submitting = true;
+    });
+    const events = new EventSource("/api/events");
+    events.addEventListener("plan-changed", (e) => {
+      if (!submitting && JSON.parse(e.data) === studentId) location.reload();
+    });
+  </script>
+</Base>

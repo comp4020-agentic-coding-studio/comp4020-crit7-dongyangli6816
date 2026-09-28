@@ -1,0 +1,152 @@
+---
+// One course in full: what it covers, the official requirements text, every
+// class time, the dates that matter, and — for the student viewing — whether
+// they can enrol, with the button right there.
+import Base from "../../layouts/Base.astro";
+import { enrolmentView, findStudent, SESSION, STUDENT_COOKIE } from "../../lib/enrolment";
+import { DAYS, formatDate, kindName, shortDay } from "../../lib/format";
+import { weekly } from "../../lib/rules";
+
+const student = findStudent(Astro.cookies.get(STUDENT_COOKIE)?.value);
+const view = enrolmentView(student);
+const code = (Astro.params.code ?? "").toUpperCase();
+const course = view.courses.find((c) => c.code === code);
+if (!course) {
+  Astro.response.status = 404;
+}
+
+const e = course?.eligibility;
+const { fixed, choices } = weekly(course?.slots ?? []);
+const byDay = (a: { day: string; start: string }, b: { day: string; start: string }) =>
+  DAYS.indexOf(a.day as never) - DAYS.indexOf(b.day as never) || a.start.localeCompare(b.start);
+const clash = course?.clashesWith[0];
+const verdict = !e
+  ? null
+  : e.state === "can-take"
+    ? { tone: clash ? "warn" : "ok", text: clash ? `You can take this, but it clashes with ${clash.title} on ${clash.day} at ${clash.start}.` : "You can take this." }
+    : e.state === "in-plan"
+      ? { tone: "done", text: "It's in your plan." }
+      : e.state === "completed"
+        ? { tone: "muted", text: "You've completed this course." }
+        : { tone: e.state === "permission" ? "info" : "bad", text: e.reason };
+---
+
+<Base title={course ? `${course.code} ${course.title} · ANU Enrolment` : "Course not found · ANU Enrolment"}>
+  <main id="main" class="course">
+    <p class="crumb"><a href="/enrol/">← All courses</a></p>
+    {
+      !course ? (
+        <>
+          <h1>That course isn't offered this semester</h1>
+          <p>
+            <a href="/enrol/">Search the courses that are</a>.
+          </p>
+        </>
+      ) : (
+        <>
+          <p class="eyebrow">{SESSION}</p>
+          <h1>
+            <span class="code">{course.code}</span> {course.title}
+          </h1>
+
+          <div class="course__layout">
+            <div class="course__body">
+              <section aria-labelledby="about-h">
+                <h2 id="about-h">About the course</h2>
+                {course.description.split("\n\n").map((p) => <p>{p}</p>)}
+              </section>
+
+              <section aria-labelledby="times-h">
+                <h2 id="times-h">When it meets</h2>
+                {fixed.length + choices.length === 0 ? (
+                  <p>No timetable has been published for this course.</p>
+                ) : (
+                  <>
+                    {fixed.length > 0 && (
+                      <>
+                        <h3>Every week</h3>
+                        <ul class="times">
+                          {fixed.sort(byDay).map((s) => (
+                            <li>
+                              <strong>
+                                {shortDay(s.day)} {s.start}–{s.end}
+                              </strong>{" "}
+                              {kindName(s.kind)}
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+                    {choices.map((streams) => (
+                      <>
+                        <h3>
+                          Choose one {kindName(streams[0][0].kind)} ({streams.length} options)
+                        </h3>
+                        <ul class="times times--grid">
+                          {streams
+                            .map((sessions) => [...sessions].sort(byDay))
+                            .sort((a, b) => byDay(a[0], b[0]))
+                            .map((sessions) => (
+                              <li>
+                                {sessions.map((s, i) => (
+                                  <>
+                                    {i > 0 && <br />}
+                                    {shortDay(s.day)} {s.start}–{s.end}
+                                  </>
+                                ))}
+                              </li>
+                            ))}
+                        </ul>
+                      </>
+                    ))}
+                    <p class="note">2027 times aren't published yet, so these are last year's.</p>
+                  </>
+                )}
+              </section>
+
+              <section aria-labelledby="req-h">
+                <h2 id="req-h">Requirements</h2>
+                <p>{course.requisiteText || "The course lists no requirements."}</p>
+                <p class="note">
+                  Wording from <a href={course.sourceUrl}>ANU Programs and Courses</a>.
+                </p>
+              </section>
+            </div>
+
+            <aside class="course__side" aria-labelledby="enrol-h">
+              <h2 id="enrol-h">Enrolling</h2>
+              {verdict && (
+                <p class={`status status--${verdict.tone}`}>
+                  <span>{verdict.text}</span>
+                </p>
+              )}
+              {e?.state === "can-take" && (
+                <form method="post" action="/api/enrolments">
+                  <button class="button button--wide" name="courseCode" value={course.code}>
+                    Enrol in {course.title}
+                  </button>
+                </form>
+              )}
+              <dl class="facts">
+                <dt>Units</dt>
+                <dd>{course.units}</dd>
+                <dt>Mode</dt>
+                <dd>{course.mode}</dd>
+                <dt>Convener</dt>
+                <dd>{course.convener ?? "Not yet announced"}</dd>
+                <dt>Classes</dt>
+                <dd>
+                  {formatDate(course.classStart, false)} – {formatDate(course.classEnd)}
+                </dd>
+                <dt>Last day to enrol</dt>
+                <dd>{formatDate(course.enrolBy)}</dd>
+                <dt>Census date</dt>
+                <dd>{formatDate(course.census)}</dd>
+              </dl>
+            </aside>
+          </div>
+        </>
+      )
+    }
+  </main>
+</Base>

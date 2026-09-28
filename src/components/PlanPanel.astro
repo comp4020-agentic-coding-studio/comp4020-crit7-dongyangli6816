@@ -1,0 +1,197 @@
+---
+// The student's semester: what they're enrolled in, how much of the load it
+// uses, and what their week looks like. Each code appears once here, in the
+// course's row; the week names courses by title, and drop posts the
+// enrolment's id (see CourseCard for why codes are counted).
+import type { PlanRow } from "../lib/enrolment";
+import { DAYS, kindName, shortDay } from "../lib/format";
+import { UNIT_LOAD, weekly, type Slot } from "../lib/rules";
+
+interface Props {
+  plan: PlanRow[];
+  units: number;
+  justEnrolled?: number;
+}
+const { plan, units, justEnrolled } = Astro.props;
+
+const FIRST_HOUR = 8;
+const LAST_HOUR = 20;
+const row = (t: string) => {
+  const [h, m] = t.split(":").map(Number);
+  const r = (h - FIRST_HOUR) * 2 + (m >= 30 ? 1 : 0) + 2; // row 1 is the day header
+  return Math.min(Math.max(r, 2), (LAST_HOUR - FIRST_HOUR) * 2 + 2);
+};
+const minutes = (t: string) => {
+  const [h, m] = t.split(":").map(Number);
+  return h * 60 + m;
+};
+
+// Colour follows the course's place in the plan, so a course keeps its colour
+// between the list and the week.
+const hue = new Map(plan.map((p, i) => [p.course.code, i % 6]));
+const titleOf = new Map(plan.map((p) => [p.course.code, p.course.title]));
+
+const blocks = plan.flatMap((p) => weekly(p.slots).fixed);
+const clashing = (b: Slot) =>
+  blocks.some(
+    (o) =>
+      o !== b &&
+      o.courseCode !== b.courseCode &&
+      o.day === b.day &&
+      minutes(b.start) < minutes(o.end) &&
+      minutes(o.start) < minutes(b.end),
+  );
+// Overlapping sessions share their day's column side by side instead of
+// covering each other: each day is two lanes, and a clash takes one each.
+const lane = new Map<Slot, "left" | "right">();
+for (const day of DAYS) {
+  const today = blocks.filter((b) => b.day === day).sort((a, b) => minutes(a.start) - minutes(b.start));
+  today.forEach((b, i) => {
+    const earlier = today.slice(0, i).find((o) => minutes(b.start) < minutes(o.end));
+    if (earlier) {
+      lane.set(earlier, "left");
+      lane.set(b, "right");
+    }
+  });
+}
+const column = (b: Slot) => {
+  const first = DAYS.indexOf(b.day as never) * 2 + 2;
+  const l = lane.get(b);
+  return l ? `${first + (l === "right" ? 1 : 0)} / span 1` : `${first} / span 2`;
+};
+const later = plan.flatMap((p) =>
+  weekly(p.slots).choices.map((streams) => ({
+    title: p.course.title,
+    kind: kindName(streams[0][0].kind),
+    count: streams.length,
+  })),
+);
+const untimed = plan.filter((p) => p.slots.length === 0).map((p) => p.course.title);
+const clashList = blocks.flatMap((b, i) =>
+  blocks
+    .slice(i + 1)
+    .filter(
+      (o) =>
+        o.courseCode !== b.courseCode &&
+        o.day === b.day &&
+        minutes(b.start) < minutes(o.end) &&
+        minutes(o.start) < minutes(b.end),
+    )
+    .map((o) => {
+      const [first, second] = minutes(b.start) <= minutes(o.start) ? [b, o] : [o, b];
+      return `${titleOf.get(first.courseCode)} and ${titleOf.get(second.courseCode)} overlap on ${first.day} from ${second.start}.`;
+    }),
+);
+const clashPairs = blocks.reduce(
+  (n, b, i) =>
+    n +
+    blocks
+      .slice(i + 1)
+      .filter(
+        (o) =>
+          o.courseCode !== b.courseCode &&
+          o.day === b.day &&
+          minutes(b.start) < minutes(o.end) &&
+          minutes(o.start) < minutes(b.end),
+      ).length,
+  0,
+);
+const pct = Math.min(100, (units / UNIT_LOAD) * 100);
+---
+
+<aside class="plan" id="plan" aria-labelledby="plan-h">
+  <div class="plan__head">
+    <h2 id="plan-h">Your plan</h2>
+    <p class="plan__load">
+      <span class="plan__units"><strong>{units}</strong> of {UNIT_LOAD} units</span>
+      <span class="meter" aria-hidden="true"><span style={`width:${pct}%`}></span></span>
+    </p>
+  </div>
+
+  {
+    plan.length === 0 ? (
+      <p class="plan__empty">Nothing here yet. Press Enrol on a course and it appears here, with its classes in your week.</p>
+    ) : (
+      <ul class="plan__list">
+        {plan.map((p) => (
+          <li
+            class:list={["plan__row", { "plan__row--new": p.enrolmentId === justEnrolled }]}
+            data-hue={hue.get(p.course.code)}
+            id={`plan-${p.enrolmentId}`}
+          >
+            <span class="plan__swatch" aria-hidden="true" />
+            <span class="plan__course">
+              <a href={`/courses/${p.course.code.toLowerCase()}/`}>
+                <span class="code">{p.course.code}</span>
+                <span class="name" id={`plan-t-${p.enrolmentId}`}>{p.course.title}</span>
+              </a>
+              <span class="plan__units-small">{p.course.units} units</span>
+            </span>
+            <form method="post" action={`/api/enrolments/${p.enrolmentId}/drop`}>
+              <button class="button button--quiet" aria-describedby={`plan-t-${p.enrolmentId}`}>
+                Drop
+              </button>
+            </form>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  {
+    plan.length > 0 && (
+      <section class="week" aria-labelledby="week-h">
+        <h3 id="week-h">
+          Your week
+          {clashPairs > 0 && <span class="week__clash-count">{clashPairs === 1 ? "1 clash" : `${clashPairs} clashes`}</span>}
+        </h3>
+        <div class="week__grid" style={`--rows:${(LAST_HOUR - FIRST_HOUR) * 2}`}>
+          {DAYS.map((d, i) => (
+            <span class="week__day" style={`grid-column:${i * 2 + 2} / span 2`} aria-hidden="true">
+              {shortDay(d)}
+            </span>
+          ))}
+          {Array.from({ length: LAST_HOUR - FIRST_HOUR }, (_, i) => (
+            <span class="week__hour" style={`grid-row:${i * 2 + 2}`} aria-hidden="true">
+              {FIRST_HOUR + i}
+            </span>
+          ))}
+          <ol class="week__blocks">
+            {blocks.map((b) => (
+              <li
+                class:list={["week__block", { "week__block--clash": clashing(b) }]}
+                data-hue={hue.get(b.courseCode)}
+                style={`grid-column:${column(b)};grid-row:${row(b.start)} / ${row(b.end)}`}
+              >
+                <span class="week__name">{titleOf.get(b.courseCode)}</span>
+                <span class="week__when">
+                  {kindName(b.kind)} · {shortDay(b.day)} {b.start}–{b.end}
+                  {clashing(b) && <span class="visually-hidden">, clashes</span>}
+                </span>
+              </li>
+            ))}
+          </ol>
+        </div>
+        {clashList.length > 0 && (
+          <ul class="week__clashes">
+            {clashList.map((c) => (
+              <li>{c}</li>
+            ))}
+          </ul>
+        )}
+        {later.length > 0 && (
+          <p class="week__later">
+            <strong>Choose times later:</strong>{" "}
+            {later.map((l, i) => (
+              <span>
+                {l.title} {l.kind} ({l.count} options){i < later.length - 1 ? "; " : ""}
+              </span>
+            ))}
+          </p>
+        )}
+        {untimed.length > 0 && <p class="week__later">No timetable yet: {untimed.join(", ")}.</p>}
+        <p class="week__note">2027 times aren't published yet, so these are last year's.</p>
+      </section>
+    )
+  }
+</aside>
